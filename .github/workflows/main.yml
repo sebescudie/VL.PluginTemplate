@@ -11,25 +11,17 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+    - name: Git Checkout
     - uses: actions/checkout@master
     
     - name: Setup MSBuild.exe
       uses: warrenbuckley/Setup-MSBuild@v1
 
-    - name: Restore
+    - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
-    - run: nuget restore src\Whatever\Whatever.sln
+      
+    - name: Restore
+      run: nuget restore src\Whatever\Whatever.sln
   
     - name: Build
-      working-directory: src\Whatever
-      run: msbuild Whatever.csproj
-  
-  deploy:
-    runs-on : windows-latest
-    steps:
-      - name: Setup NuGet.exe for use with actions
-        uses: NuGet/setup-nuget@v1.0.2
-        with:
-          nuget-version: latest
-    
-      
+      run: msbuild src\Whatever\Whatever.csproj
