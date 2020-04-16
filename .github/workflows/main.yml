@@ -25,3 +25,11 @@ jobs:
   
     - name: Build
       run: msbuild src\Whatever\Whatever.csproj
+  
+  deploy:
+    runs-on: windows-latest
+    steps:
+    - name: Publish Nuget
+      uses: rohith/publish-nuget@v2.2.1
+      with:
+        PROJECT_FILE_PATH: deployment/GithubPackageTest.nuspec
