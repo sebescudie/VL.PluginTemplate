@@ -31,8 +31,6 @@ jobs:
     
     - name: Nuget Pack
       run: nuget pack ./deployment/GithubPackageTest.nuspec
-      
-    - name: Env
       env:
         SECRET: ${{ secrets.GITHUB_TOKEN }} 
       
