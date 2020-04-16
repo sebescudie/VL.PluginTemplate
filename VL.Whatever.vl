@@ -39,11 +39,6 @@
             </Pin>
             <Pin Id="NTUPZunRmkKMub17XdeqoJ" Name="Output" Kind="OutputPin" Bounds="396,326" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="UlKuHK9qoXUNrnwPUJxao7">
             <Fragment Id="VJJPGBxizGkLfsI3TgMtvJ" Patch="N81pPFnL2oKLgNFmTwFWMg" Enabled="true" />
             <Fragment Id="MLHVEJm74SePLJP8LbLhJS" Patch="GafDUp6RMTLLlGl54ATuYR" Enabled="true" />
@@ -52,6 +47,30 @@
           <Link Id="DHxvZwixJDOMgVjISOB7to" Ids="K87fIXbAQPRO6oeBBcDdMg,IMgeoqSQ3lbOhBG4rUoOeq" />
           <Link Id="NLRYgKzPgaAMnUvAJIPYIx" Ids="QYEdloUiM6fNO4cZ0eIySZ,LEHU4q48211NJI28QDuhCW" />
           <Link Id="AxRjs3t1EvOPNwPW3pcvfc" Ids="LEHU4q48211NJI28QDuhCW,NTUPZunRmkKMub17XdeqoJ" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Bar ************************
+
+-->
+      <Node Name="Bar" Bounds="352,290,132,82" Id="BBnHuWc0KoOND3DgjKRA3I">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="BygyRlbxB7tLuXnDnpNhiC">
+          <Node Bounds="384,322,31,19" AutoConnect="true" Id="DLW7t7vcHHPOztInXWm0Ja">
+            <p:NodeReference LastCategoryFullName="Whatever.Foo" LastSymbolSource="Whatever.dll">
+              <Choice Kind="OperationNode" Name="Bar" />
+              <FullNameCategoryReference ID="Whatever.Foo" />
+            </p:NodeReference>
+            <Pin Id="NVcmhKLMXOyNVqfLBLqfcR" Name="Input" Kind="InputPin" />
+            <Pin Id="Uhgvs60F3MoLDMc93QV8aW" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pin Id="PEnPkqTM6aJLUyce2X1jPA" Name="Input" Kind="InputPin" />
+          <Pin Id="ULJy91FrTFxLAbVbG6e1a3" Name="Output" Kind="OutputPin" />
         </Patch>
       </Node>
     </Canvas>
@@ -69,11 +88,6 @@
         <Canvas Id="M1SKtRgxnMpQPiXFRiDOEI" CanvasType="Group" />
         <Patch Id="PbGLKGaoYqUOu45xvV9AUt" Name="Create" />
         <Patch Id="JLNCrxZXUzlNMedqGBrC12" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="SckP1G4eaaDMEYZneZLKNp">
           <Fragment Id="TGWeXGVGozmP1uOxi63x4w" Patch="PbGLKGaoYqUOu45xvV9AUt" Enabled="true" />
           <Fragment Id="VHdVtQESHDCPxwiop4ul1O" Patch="JLNCrxZXUzlNMedqGBrC12" Enabled="true" />
@@ -82,4 +96,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2020.1.0" />
+  <PlatformDependency Id="UQlZ2pHZtEbNO1C3SFpaqi" Location="./src/Whatever/bin/Debug/netstandard2.0/Whatever.dll" />
 </Document>

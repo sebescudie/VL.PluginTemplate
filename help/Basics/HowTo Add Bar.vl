@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="TdtUy5e6VvkLk7SehOpxcd" LanguageVersion="2020.1.0" Version="0.128">
+  <NugetDependency Id="VMo4HaTEkVTLtfYj9q9ZYR" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="EBJpcI9XfAwLRZdOzyKrhP">
+    <Canvas Id="DZ4WByYr0iQNUdSbUzWirB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Td5sXtGXvXyP4AxJ204yrD">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RcdmicmnND1Pyv3TJj3de9">
+        <Canvas Id="Th1wAbWQAPlMOAdCYXCkfd" CanvasType="Group">
+          <Node Bounds="407,409" Id="CbLPBPYzQmGM8Omp4dYEvB">
+            <p:NodeReference LastCategoryFullName="Whatever" LastSymbolSource="VL.Whatever.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Whatever" />
+              <Choice Kind="OperationCallFlag" Name="Bar" />
+            </p:NodeReference>
+            <Pin Id="SHFmygMOHzBLiLvwQlP3PB" Name="Input" Kind="InputPin" />
+            <Pin Id="N8xzJBhVz7vLotc2GiX3qa" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EeQzJ9H7nUiL5Xsl35zNlf" Comment="" Bounds="409,382,35,15" ShowValueBox="true" isIOBox="true" Value="Foo">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LWy08MvQe5QOwitv2JVR29" Comment="" Bounds="409,460,42,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KSogRF4FSQtNF4b0i0t45Y" Bounds="461,421,168,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; adds Bar to your string">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UMHvqj8Id8pO2ddYAbC8xP" Name="Create" />
+        <Patch Id="SUuys83bkbYO7pfz05VSQu" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="M7DhTjVrkxFPTU6ibB97qp">
+          <Fragment Id="Ka160IZ6ipXPEuPO79oXgb" Patch="UMHvqj8Id8pO2ddYAbC8xP" Enabled="true" />
+          <Fragment Id="PCarn4INeauNtWzLUpnz9G" Patch="SUuys83bkbYO7pfz05VSQu" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="QVycUh7dwkuOXD4K3a3RIz" Ids="EeQzJ9H7nUiL5Xsl35zNlf,SHFmygMOHzBLiLvwQlP3PB" />
+        <Link Id="OhIEZQUz4jDQAXb6K0xGfm" Ids="N8xzJBhVz7vLotc2GiX3qa,LWy08MvQe5QOwitv2JVR29" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="AWADncGnm9GO1XnlR6Z1ft" Location="VL.Skia" Version="2020.1.0" />
+  <DocumentDependency Id="F7jadxZnXSRPMuLFJsm1DE" Location="../../VL.Whatever.vl" />
+</Document>
