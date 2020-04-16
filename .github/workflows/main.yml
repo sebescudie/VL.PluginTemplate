@@ -28,3 +28,11 @@ jobs:
     
     - name: Nuget Pack
       run: nuget pack ./deployment/GithubPackageTest.nuspec
+    
+    - name: Push Nupkg to Github Packages
+      uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
+      with:
+        nupkg-path: ./deployment/*.nupkg
+        repo-owner: sebescudie
+        gh-user: sebescudie
+        token: ${{ secrets.GITHUB_TOKEN }}
