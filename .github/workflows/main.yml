@@ -27,6 +27,7 @@ jobs:
       run: msbuild src\Whatever\Whatever.csproj
   
   deploy:
+    needs: build
     runs-on: windows-latest
     steps:
     - name: Publish Nuget
