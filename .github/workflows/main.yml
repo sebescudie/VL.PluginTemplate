@@ -25,16 +25,6 @@ jobs:
   
     - name: Build
       run: msbuild src\Whatever\Whatever.csproj
-  
-  deploy:
-    needs: build
-    runs-on: windows-latest
-    steps:
-    - name: Setup Nuget.exe
-      uses: nuget/setup-nuget@v1
     
-    - name: Git Checkout
-      uses: actions/checkout@master
-       
     - name: Nuget Pack
       run: nuget pack ./deployment/GithubPackageTest.nuspec
