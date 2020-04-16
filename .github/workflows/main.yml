@@ -34,4 +34,5 @@ jobs:
       uses: nuget/setup-nuget@v1
     
     - name: Nuget Pack
-      run: nuget pack deployment/GithubPackageTest.nuspec
+      working-directory: deployment
+      run: nuget pack GithubPackageTest.nuspec
