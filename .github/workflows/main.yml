@@ -33,6 +33,8 @@ jobs:
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
     
+    - name: List Dir
+      run: dir
+    
     - name: Nuget Pack
-      working-directory: deployment
-      run: nuget pack ./GithubPackageTest.nuspec
+      run: nuget pack ./deployment/GithubPackageTest.nuspec
