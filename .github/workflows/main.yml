@@ -33,8 +33,8 @@ jobs:
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
     
-    - name: List Dir
-      run: dir
-    
+    - name: Git Checkout
+      uses: actions/checkout@master
+       
     - name: Nuget Pack
       run: nuget pack ./deployment/GithubPackageTest.nuspec
