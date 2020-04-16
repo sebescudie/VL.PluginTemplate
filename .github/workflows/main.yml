@@ -30,5 +30,8 @@ jobs:
     needs: build
     runs-on: windows-latest
     steps:
+    - name: Setup Nuget.exe
+      run: nuget/setup-nuget@v1
+    
     - name: Nuget Pack
       run: nuget pack deployment/GithubPackageTest.nuspec
