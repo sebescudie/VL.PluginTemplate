@@ -15,8 +15,13 @@ jobs:
     
     - name: Setup MSBuild.exe
       uses: warrenbuckley/Setup-MSBuild@v1
-    
-    - name: MSBuild
+
+    - name: Restore
+      uses: nuget/setup-nuget@v1
+      working-directory: src\Whatever
+      run: nuget restore Whatever.sln
+
+    - name: Build
       working-directory: src\Whatever
       run: msbuild Whatever.csproj
   
