@@ -35,4 +35,4 @@ jobs:
     
     - name: Nuget Pack
       working-directory: deployment
-      run: nuget pack GithubPackageTest.nuspec
+      run: nuget pack ./GithubPackageTest.nuspec
