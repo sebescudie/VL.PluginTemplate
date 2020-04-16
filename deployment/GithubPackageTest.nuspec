@@ -8,6 +8,7 @@
     <owners>sebescudie</owners>
     <projectUrl>https://github.com/sebescudie/GithubPackageTest</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <repository type="git" url="https://github.com/sebescudie/GithubPackageTest.git"/>
     <summary>A test for github packages</summary>
     <description>A test for github packages</description>
     <copyright>Copyright © 2020 by Sebes. All rights reserved.</copyright>
