@@ -18,9 +18,8 @@ jobs:
 
     - name: Restore
       uses: nuget/setup-nuget@v1
-      working-directory: src\Whatever
-      run: nuget restore Whatever.sln
-
+    - run: nuget restore src\Whatever\Whatever.sln
+  
     - name: Build
       working-directory: src\Whatever
       run: msbuild Whatever.csproj
