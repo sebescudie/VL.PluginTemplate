@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="F5KMmdySeu0LBCHoj5OYJx" LanguageVersion="2020.1.0" Version="0.128">
+  <NugetDependency Id="CtRD94DeiXrPBvpsvp5gxl" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="LPiTHIMzdWcN2MMEs0SXSK">
+    <Canvas Id="NVAWkZYR0K0QamNth39yYT" DefaultCategory="Whatever" CanvasType="FullCategory">
+      <!--
+
+    ************************ AddYo ************************
+
+-->
+      <Node Name="AddYo" Bounds="349,209" Id="BlW2WzT57cSNzRr4TgailB" Summary="Adds &quot;Yo&quot; to the input" Remarks="That's great">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="PbdZBpt3ntVO1rqCSWJJsi">
+          <Canvas Id="ID2kBqVp0exNQjKOrkgg3M" CanvasType="Group">
+            <ControlPoint Id="K87fIXbAQPRO6oeBBcDdMg" Bounds="417,197" />
+            <Node Bounds="395,260,25,19" Id="SBDbsCxolTHP7ndDIHqIa7">
+              <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="+" />
+              </p:NodeReference>
+              <Pin Id="MhOphfZbpU0Ng3xkYBiN6K" Name="Input" Kind="InputPin" DefaultValue="Yo ">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="IMgeoqSQ3lbOhBG4rUoOeq" Name="Input 2" Kind="InputPin" />
+              <Pin Id="QYEdloUiM6fNO4cZ0eIySZ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LEHU4q48211NJI28QDuhCW" Bounds="396,327" />
+          </Canvas>
+          <Patch Id="N81pPFnL2oKLgNFmTwFWMg" Name="Create" />
+          <Patch Id="GafDUp6RMTLLlGl54ATuYR" Name="Update">
+            <Pin Id="LZLtSkFIR3pOgI8vd3gtLT" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="NTUPZunRmkKMub17XdeqoJ" Name="Output" Kind="OutputPin" Bounds="396,326" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="UlKuHK9qoXUNrnwPUJxao7">
+            <Fragment Id="VJJPGBxizGkLfsI3TgMtvJ" Patch="N81pPFnL2oKLgNFmTwFWMg" Enabled="true" />
+            <Fragment Id="MLHVEJm74SePLJP8LbLhJS" Patch="GafDUp6RMTLLlGl54ATuYR" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="HypypyaJFQDNDPgmjzbtfp" Ids="LZLtSkFIR3pOgI8vd3gtLT,K87fIXbAQPRO6oeBBcDdMg" IsHidden="true" />
+          <Link Id="DHxvZwixJDOMgVjISOB7to" Ids="K87fIXbAQPRO6oeBBcDdMg,IMgeoqSQ3lbOhBG4rUoOeq" />
+          <Link Id="NLRYgKzPgaAMnUvAJIPYIx" Ids="QYEdloUiM6fNO4cZ0eIySZ,LEHU4q48211NJI28QDuhCW" />
+          <Link Id="AxRjs3t1EvOPNwPW3pcvfc" Ids="LEHU4q48211NJI28QDuhCW,NTUPZunRmkKMub17XdeqoJ" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="JX0SMRih5rAPhSCXfMTK8h">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="GkY32bjZR97OvvfQTYiqoe">
+        <Canvas Id="M1SKtRgxnMpQPiXFRiDOEI" CanvasType="Group" />
+        <Patch Id="PbGLKGaoYqUOu45xvV9AUt" Name="Create" />
+        <Patch Id="JLNCrxZXUzlNMedqGBrC12" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="SckP1G4eaaDMEYZneZLKNp">
+          <Fragment Id="TGWeXGVGozmP1uOxi63x4w" Patch="PbGLKGaoYqUOu45xvV9AUt" Enabled="true" />
+          <Fragment Id="VHdVtQESHDCPxwiop4ul1O" Patch="JLNCrxZXUzlNMedqGBrC12" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="N0wKF2rNGWWLlKpD1eaaMc" Location="VL.Skia" Version="2020.1.0" />
+</Document>

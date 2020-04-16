@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="CdaX6OXyfoCMjl7aWMz1cC" LanguageVersion="2020.1.0" Version="0.128">
+  <NugetDependency Id="EvGgQrBiFbGOnWZoULOLup" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="H9bzQpRRN2ZNWu1kI8qiOE">
+    <Canvas Id="FCiTYM7t4ltLbhxVOAKSsk" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MyMxuFGoMbKLoga8JMrxt9">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="F5lL2Xuaf0DM3zIt5Y1kL9">
+        <Canvas Id="UEJmZ5ZZAigOjl4bRPAo79" CanvasType="Group">
+          <Node Bounds="401,236" Id="Buoh2amoPArM7tUA0Wgu3K">
+            <p:NodeReference LastCategoryFullName="Whatever" LastSymbolSource="VL.Whatever.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Whatever" />
+              <Choice Kind="ProcessAppFlag" Name="AddYo" />
+            </p:NodeReference>
+            <Pin Id="NpmVOp6jshrOzvpZYhT1cN" Name="Input" Kind="InputPin" />
+            <Pin Id="P6kAFdTN2dGMwqwojlUBxB" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="DIwqPTKHsslLFC8GsyvFMq" Comment="" Bounds="403,213,76,7" ShowValueBox="true" isIOBox="true" Value="Michel">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="N7x4xgkBSGbOu1NmcZX33F" Comment="" Bounds="403,283,52,15" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="AEKbnzpo0NePaYSTyN6fKA" Name="Create" />
+        <Patch Id="QlzWL0qC30BPm0rqghIXnq" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="QmyaXU5AXVKMp9XGP05LVJ">
+          <Fragment Id="Myf3SdXEAfUO2G5t6P8YrW" Patch="AEKbnzpo0NePaYSTyN6fKA" Enabled="true" />
+          <Fragment Id="AhvfiVkTZgcO80oFYkD3Zt" Patch="QlzWL0qC30BPm0rqghIXnq" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="MDeGVXf54DqNr5pwVISM2G" Ids="DIwqPTKHsslLFC8GsyvFMq,NpmVOp6jshrOzvpZYhT1cN" />
+        <Link Id="MqbINKtsMTHPWYEzXdlLA5" Ids="P6kAFdTN2dGMwqwojlUBxB,N7x4xgkBSGbOu1NmcZX33F" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="HmPS5WQMXcGNXcC8tR6WLO" Location="VL.Skia" Version="2020.1.0" />
+  <DocumentDependency Id="OQ9YPoCdbo2MBTuKXTjtZo" Location="../../VL.Whatever.vl" />
+</Document>
