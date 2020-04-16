@@ -30,7 +30,5 @@ jobs:
     needs: build
     runs-on: windows-latest
     steps:
-    - name: Publish Nuget
-      uses: rohith/publish-nuget@v2.2.1
-      with:
-        PROJECT_FILE_PATH: deployment/GithubPackageTest.nuspec
+    - name: Nuget Pack
+      run: nuget pack deployment/GithubPackageTest.nuspec
