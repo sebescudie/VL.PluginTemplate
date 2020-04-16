@@ -20,6 +20,9 @@ jobs:
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
       
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1.4.0
+    
     - name: Restore
       run: nuget restore src\Whatever\Whatever.sln
   
