@@ -35,4 +35,4 @@ jobs:
         SECRET: ${{ secrets.GITHUB_TOKEN }} 
       
     - name: Nuget Push
-      run: nuget push ./*.nuspec -source "github"
+      run: nuget push ./*.nupkg -source "github"
