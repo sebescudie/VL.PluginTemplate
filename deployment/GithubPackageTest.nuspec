@@ -18,5 +18,6 @@
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\**\*.vl" target="" exclude="" />
     <file src="..\src\Whatever\bin\Debug\netstandard2.0\Whatever.dll" target="lib\netstandard2.0" exclude="" />
+    <file src="..\src\Whatever\bin\Debug\netstandard2.0\Whatever.pdb" target="lib\netstandard2.0" exclude="" />
   </files>
 </package>
