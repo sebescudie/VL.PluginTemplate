@@ -9,8 +9,7 @@ on:
       - master
     paths-ignore:
       - README.md
-      - main.yml 
-
+        - 
 jobs:
   build:
     runs-on: windows-latest
