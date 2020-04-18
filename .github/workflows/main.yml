@@ -5,7 +5,11 @@ name: push_nuget
 # on push on master
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+    paths-ignore:
+      - README.md
+      - main.yml 
 
 jobs:
   build:
