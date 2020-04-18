@@ -22,12 +22,9 @@ jobs:
       
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1.4.0
-    
-    - name: Restore
-      run: nuget restore src\Whatever\Whatever.sln
   
     - name: Build
-      run: msbuild src\Whatever\Whatever.csproj
+      run: msbuild src\Whatever\Whatever.csproj /t:Build /v:m /m /restore /p:Configuration=Release 
     
     - name: Nuget Pack
       run: nuget pack ./deployment/GithubPackageTest.nuspec -Symbols -SymbolPackageFormat snupkg
