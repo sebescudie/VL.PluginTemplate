@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>GithubPackageTest</id>
-    <version>1.0.2</version>
-    <title>GithubPackageTest</title>
+    <id>VL.PluginTemplate</id>
+    <version>1.0.0</version>
+    <title>VL.PluginTemplate</title>
     <icon>images\icon.png</icon>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
-    <projectUrl>https://github.com/sebescudie/GithubPackageTest</projectUrl>
+    <projectUrl>https://github.com/sebescudie/VL.PluginTemplate</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <repository type="git" url="https://github.com/sebescudie/GithubPackageTest.git"/>
-    <summary>A test for github packages</summary>
-    <description>A test for github packages</description>
+    <repository type="git" url="https://github.com/sebescudie/VL.PluginTemplate.git"/>
+    <summary>Template for a VL plugin</summary>
+    <description>Template for a VL plugin</description>
     <copyright>Copyright © 2020 by Sebes. All rights reserved.</copyright>
     <tags>VL</tags>
   </metadata>
