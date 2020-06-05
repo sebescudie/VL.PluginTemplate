@@ -20,6 +20,6 @@
     <file src="..\**\*.vl" target="" exclude="" />
     <file src="..\src\Whatever\bin\Release\netstandard2.0\Whatever.dll" target="lib\netstandard2.0" exclude="" />
     <file src="..\src\Whatever\bin\Release\netstandard2.0\Whatever.pdb" target="lib\netstandard2.0" exclude="" />
-    <file src="nugeticon.png" target="icon\" />
+    <file src="nugeticon.png" target="images\" />
   </files>
 </package>
