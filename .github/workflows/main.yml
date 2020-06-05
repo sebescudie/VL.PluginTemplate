@@ -25,12 +25,14 @@ jobs:
       
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1.4.0
-  
-    - name: Build
-      run: msbuild src\Whatever\Whatever.csproj /t:Build /v:m /m /restore /p:Configuration=Release 
     
-    - name: Nuget Pack
-      run: nuget pack ./deployment/GithubPackageTest.nuspec -Symbols -SymbolPackageFormat snupkg
-      
-    - name: Nuget Push
-      run: nuget push *.nupkg ${{ secrets.NUGET_KEY }} -src https://api.nuget.org/v3/index.json
+    - name: Publish
+      uses: vvvv/PublishNuget@v1.0.0-alpha
+      with:
+        NUSPEC: ./deployment/GithubPackageTest.nuspec
+        SOLUTION: src\Whatever\Whatever.csproj
+        ICON_SRC: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
+        ICON_DST: images\icon.png
+        VERSION: 2.0.0
+        AUTO_PATCH_NUMBER: true
+        NUGET_KEY: ${{ secrets.NUGET_KEY }}
