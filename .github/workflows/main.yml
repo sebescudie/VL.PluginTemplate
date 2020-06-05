@@ -33,6 +33,6 @@ jobs:
         SOLUTION: src\Whatever\Whatever.csproj
         ICON_SRC: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         ICON_DST: images
-        VERSION: 2.0.0
+        VERSION: 2.0.1
         AUTO_PATCH_NUMBER: true
         NUGET_KEY: ${{ secrets.NUGET_KEY }}
