@@ -29,7 +29,7 @@ jobs:
     - name: Publish
       uses: vvvv/PublishVLNuget@1.0.14-alpha
       with:
-        NUSPEC: deployment\GithubPackageTest.uspec
+        NUSPEC: deployment\GithubPackageTest.nuspec
         SOLUTION: src\Whatever\Whatever.csproj
         ICON_SRC: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         ICON_DST: ./deployment/nugeticon.png
