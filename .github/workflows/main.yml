@@ -27,12 +27,12 @@ jobs:
       uses: actions/setup-dotnet@v1.4.0
     
     - name: Publish
-      uses: vvvv/PublishVLNuget@1.0.13-alpha
+      uses: vvvv/PublishVLNuget@1.0.14-alpha
       with:
-        NUSPEC: deployment\GithubPackageTest.nuspec
+        NUSPEC: deployment\GithubPackageTest.uspec
         SOLUTION: src\Whatever\Whatever.csproj
         ICON_SRC: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         ICON_DST: ./deployment/nugeticon.png
-        VERSION: 2.0.0
+        VERSION: 2.0.3
         AUTO_PATCH_NUMBER: true
         NUGET_KEY: ${{ secrets.NUGET_KEY }}
