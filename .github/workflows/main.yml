@@ -70,7 +70,7 @@ jobs:
         echo "CommitDate: ${{ steps.gitversion.outputs.commitDate }}"
 
     - name: Publish
-      uses: vvvv/PublishVLNuget@1.0.15-alpha
+      uses: vvvv/PublishVLNuget@1.0.16-alpha
       with:
         NUSPEC: deployment\GithubPackageTest.nuspec
         SOLUTION: src\Whatever\Whatever.csproj
