@@ -27,7 +27,7 @@ jobs:
 #      uses: actions/setup-dotnet@v1.4.0
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.17-alpha
+      uses: vvvv/PublishVLNuget@1.0.18-alpha
       with:
         nuspec: deployment\GithubPackageTest.nuspec
         solution: src\Whatever\Whatever.csproj
