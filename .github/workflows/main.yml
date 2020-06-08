@@ -22,9 +22,6 @@ jobs:
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
-      
-#    - name: Setup .NET Core SDK
-#      uses: actions/setup-dotnet@v1.4.0
 
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.18-alpha
