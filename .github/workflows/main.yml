@@ -24,12 +24,9 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.19-alpha
+      uses: vvvv/PublishVLNuget@1.0.21-alpha
       with:
-        nuspec: deployment\GithubPackageTest.nuspec
         solution: src\Whatever\Whatever.csproj
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
-        version: 2.0.4
-        auto-patch-number: true
         nuget-key: ${{ secrets.NUGET_KEY }}
