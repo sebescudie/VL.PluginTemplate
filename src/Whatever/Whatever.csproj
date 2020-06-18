@@ -9,14 +9,14 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/sebescudie/VL.PluginTemplate</PackageProjectUrl>
     <PackageId>VL.PluginTemplate</PackageId>
-    <Version>2.0.5</Version>
+    <Version>2.0.6</Version>
     <Description>Template for a VL plugin</Description>
     <Copyright>sebescudie 2020</Copyright>
-    <PackageIcon>ico.png</PackageIcon>
+    <PackageIcon>nugeticon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\..\..\Pictures\dev\ico\ico.png">
+    <None Include="..\..\deployment\nugeticon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
@@ -28,13 +28,6 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.1.91">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
   </ItemGroup>
 
 </Project>
