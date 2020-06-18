@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.PluginTemplate</id>
-    <version>2.0.5</version>
+    <version>2.0.7</version>
     <title>VL.PluginTemplate</title>
-    <!-- <icon>images\nugeticon.png</icon> -->
+    <icon>images\nugeticon.png</icon>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
     <projectUrl>https://github.com/sebescudie/VL.PluginTemplate</projectUrl>
@@ -20,6 +20,6 @@
     <file src="..\**\*.vl" target="" exclude="" />
     <file src="..\src\Whatever\bin\Release\netstandard2.0\Whatever.dll" target="lib\netstandard2.0" exclude="" />
     <file src="..\src\Whatever\bin\Release\netstandard2.0\Whatever.pdb" target="lib\netstandard2.0" exclude="" />
-    <!-- <file src="..\images\nugeticon.png" target="" /> -->
+    <file src="nugeticon.png" target="images\nugeticon.png" />
   </files>
 </package>
