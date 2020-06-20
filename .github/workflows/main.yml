@@ -24,10 +24,9 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.24-alpha
+      uses: vvvv/PublishVLNuget@1.0.25-alpha
       with:
-        nuspec: deployment\GithubPackageTest.nuspec
         solution: src\Whatever\Whatever.csproj
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./deployment/nugeticon.png
+        icon-dst: ./nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
