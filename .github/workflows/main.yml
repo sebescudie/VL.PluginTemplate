@@ -29,5 +29,5 @@ jobs:
         solution: src\Whatever\Whatever.csproj
         nuspec: deployment\GithubPackageTest.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./nugeticon.png
+        icon-dst: nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
