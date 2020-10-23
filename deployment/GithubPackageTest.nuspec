@@ -4,7 +4,6 @@
     <id>VL.PluginTemplate</id>
     <version>2.0.99</version>
     <title>VL.PluginTemplate</title>
-    <icon>images\nugeticon.png</icon>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
     <projectUrl>https://github.com/sebescudie/VL.PluginTemplate</projectUrl>
