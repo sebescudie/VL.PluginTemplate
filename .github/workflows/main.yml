@@ -17,6 +17,9 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@master
 
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.0
+
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
 
