@@ -12,14 +12,9 @@
     <Version>6.0.10</Version>
     <Description>Template for a VL plugin</Description>
     <Copyright>sebescudie 2020</Copyright>
-    <PackageIcon>nugeticon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\nugeticon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
     <None Include="..\..\*.vl">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
