@@ -9,7 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/sebescudie/VL.PluginTemplate</PackageProjectUrl>
     <PackageId>VL.PluginTemplate</PackageId>
-    <Version>2.0.10</Version>
+    <Version>6.0.10</Version>
     <Description>Template for a VL plugin</Description>
     <Copyright>sebescudie 2020</Copyright>
     <PackageIcon>nugeticon.png</PackageIcon>
