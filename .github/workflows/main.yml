@@ -19,6 +19,8 @@ jobs:
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
+      with:
+          vs-version: '[16.7]'
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
