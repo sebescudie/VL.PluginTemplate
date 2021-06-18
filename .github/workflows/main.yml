@@ -24,7 +24,9 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.40
+      uses: vvvv/PublishVLNuget@1.0.41
       with:
         csproj: src/Whatever/Whatever.csproj
+        nuspec: deployment/GithubPackageTest.nuspec
+        version: "6.6.6"
         nuget-key: ${{ secrets.NUGET_KEY }}
