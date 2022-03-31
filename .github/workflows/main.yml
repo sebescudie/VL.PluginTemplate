@@ -4,11 +4,18 @@ name: push_nuget
 
 # on push on master
 on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - README.md
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version to push'
+        required: false
+        default: 'X.X.X'
+      is_pre:
+        description: 'Is pre release'
+        type: boolean
+      notes:
+        description: 'A description for this release, will be displayed in the Releases section'
+        required: true
 
 jobs:
   build:
@@ -30,3 +37,19 @@ jobs:
         nuspec: deployment/GithubPackageTest.nuspec
         version: "6.6.6"
         nuget-key: ${{ secrets.NUGET_KEY }}
+  
+    - name: Create Tag
+      uses: negz/create-tag@v1
+      with:
+        version: ${{ github.event.inputs.version }}
+        message: ${{ github.event.inputs.notes }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Release & Assets
+      uses: Hs1r1us/Release-AIO@v1.0
+      with:
+        tag_name: ${{ github.event.inputs.version }}
+        release_name: ${{ github.event.inputs.version }}
+        body: ${{ github.event.inputs.notes }}
+        asset_files: ./deployment/*.nupkg
+
