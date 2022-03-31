@@ -46,6 +46,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Release & Assets
+      uses: Hs1r1us/Release-AIO@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -53,4 +54,3 @@ jobs:
         release_name: ${{ github.event.inputs.version }}
         body: ${{ github.event.inputs.notes }}
         asset_files: ./deployment/*.nupkg
-
