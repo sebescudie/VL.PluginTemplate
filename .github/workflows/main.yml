@@ -45,12 +45,10 @@ jobs:
         message: ${{ github.event.inputs.notes }}
         token: ${{ secrets.GITHUB_TOKEN }}
         
-    - name: Release & Assets
-      uses: Hs1r1us/Release-AIO@v1.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Release
+      uses: softprops/action-gh-release@v1
       with:
-        tag_name: ${{ github.event.inputs.version }}
-        release_name: ${{ github.event.inputs.version }}
         body: ${{ github.event.inputs.notes }}
-        asset_files: ./*.nupkg
+        tag_name: ${{ github.event.inputs.version }}
+        files: ./*.nupkg
+        token: ${{ secrets.GITHUB_TOKEN }
