@@ -35,7 +35,7 @@ jobs:
       with:
         csproj: src/Whatever/Whatever.csproj
         nuspec: deployment/GithubPackageTest.nuspec
-        version: "6.6.6"
+        version: ${{ github.event.inputs.version }}
         nuget-key: ${{ secrets.NUGET_KEY }}
   
     - name: Create Tag
