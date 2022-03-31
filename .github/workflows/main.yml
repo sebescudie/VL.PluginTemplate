@@ -53,4 +53,4 @@ jobs:
         tag_name: ${{ github.event.inputs.version }}
         release_name: ${{ github.event.inputs.version }}
         body: ${{ github.event.inputs.notes }}
-        asset_files: ./deployment/*.nupkg
+        asset_files: ./*.nupkg
