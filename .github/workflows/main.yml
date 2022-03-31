@@ -51,4 +51,4 @@ jobs:
         body: ${{ github.event.inputs.notes }}
         tag_name: ${{ github.event.inputs.version }}
         files: ./*.nupkg
-        token: ${{ secrets.GITHUB_TOKEN }
+        token: ${{ secrets.GITHUB_TOKEN }}
