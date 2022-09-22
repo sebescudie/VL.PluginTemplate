@@ -36,7 +36,7 @@ jobs:
       uses: dotnet/nbgv@master
       with:
         setAllVars: true
-        stamp: package.json
+        stamp: version.json
     - run: echo "$NBGV_SemVer2"
     - run: echo "$NBGV_NuGetPackageVersion"
     - run: echo "$NBGV_SimpleVersion"
