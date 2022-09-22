@@ -22,7 +22,9 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Git Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
